@@ -1,0 +1,100 @@
+@import "../../styles/global";
+@import "../../styles/variables";
+
+.header {
+  @include flexCenter(space-between);
+  box-sizing: border-box;
+  display: flex;
+  border-bottom: 1px solid #d8d8d8;
+  width: 100%;
+  padding: 0rem 2rem;
+  font-size: 0.95rem;
+  height: 3.5rem;
+}
+
+.header__left {
+  @include flexCenter(initial);
+  height: 100%;
+  max-width: 40%;
+  // flex: .4;
+
+  &__logo,
+  &__nav,
+  &__nav__elem {
+    @include flexCenter(initial);
+  }
+
+  &__logo {
+    margin-right: 2rem;
+    cursor: pointer;
+    min-width: fit-content;
+  }
+
+  &__nav {
+    align-self: stretch;
+
+    &__elem {
+      border-bottom: 0.2rem solid transparent;
+      color: $primary-color;
+      padding: 0 1rem;
+      text-decoration: none;
+      font-weight: $regular-font;
+      align-self: stretch;
+
+      &:not(:first-of-type) {
+        margin-left: 0.5rem;
+      }
+
+      &:focus {
+        color: $active-color;
+        background-color: $active-background;
+        border-color: $active-color;
+      }
+
+      img {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+.header__right {
+  @include flexCenter(space-between);
+  align-self: flex-end;
+  height: 100%;
+  width: 20%;
+  min-width: 19rem;
+  padding: 0.3rem 0;
+
+
+  &__search {
+    position: relative;
+    input {
+      outline: none;
+      border: 1px solid #dce1e7;
+      padding: 0.5rem 0;
+      padding-left: 2.8rem;
+      border-radius: 0.4rem;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto 1rem;
+    }
+  }
+
+  &__user {
+    @include flexCenter(initial);
+
+    img:first-of-type {
+      border-radius: 50%;
+      height: 2.2rem;
+      width: 2.2rem;
+      padding: 0.5rem;
+      background-color: #d8d8d8;
+      margin-right: .3rem;
+    }
+  }
+}
