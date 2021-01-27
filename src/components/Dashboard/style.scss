@@ -1,0 +1,23 @@
+@import "../../styles/global";
+@import "../../styles/variables";
+
+.dashboard {
+  color: $primary-color;
+  padding: $container;
+
+  &__nav {
+    @include flexCenter(initial);
+    color: $primary-color;
+    padding: 1.3rem;
+    font-size: 0.9rem;
+
+    & > :not(:last-child) {
+      margin-right: 0.4rem;
+    }
+  }
+
+  &__trackers {
+    display: flex;
+    justify-content: space-between;
+  }
+}

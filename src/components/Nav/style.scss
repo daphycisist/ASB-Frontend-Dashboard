@@ -7,7 +7,8 @@
   display: flex;
   border-bottom: 1px solid #d8d8d8;
   width: 100%;
-  padding: 0rem 2rem;
+  padding: $container;
+
   font-size: 0.95rem;
   height: 3.5rem;
 }
@@ -53,6 +54,8 @@
 
       img {
         margin-right: 0.5rem;
+        color: $icon-color;
+        color: red;
       }
     }
   }
@@ -65,7 +68,6 @@
   width: 20%;
   min-width: 19rem;
   padding: 0.3rem 0;
-
 
   &__search {
     position: relative;
@@ -94,7 +96,7 @@
       width: 2.2rem;
       padding: 0.5rem;
       background-color: #d8d8d8;
-      margin-right: .3rem;
+      margin-right: 0.3rem;
     }
   }
 }
