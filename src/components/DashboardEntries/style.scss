@@ -1,0 +1,30 @@
+@import "../../styles/global";
+@import "../../styles/variables";
+
+.dashboardentries {
+  width: 100%;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: #f3f6f9;
+    color: #899198;
+    font-size: .7rem;
+
+    justify-content: space-between;
+
+    p {
+      justify-self: start;
+    }
+
+    input[type="checkbox"] {
+      -ms-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      transform: scale(1.1);
+      padding: 10px;
+    }
+  }
+}

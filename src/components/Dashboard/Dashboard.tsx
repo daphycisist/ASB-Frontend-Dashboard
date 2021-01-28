@@ -2,6 +2,9 @@ import React from "react";
 import TrackerCard from "../TrackerCard/TrackerCard";
 import "./style.scss";
 import trackerData from "../../tracker.json";
+import DivisionSummary from "../DivisionSummary/DivisionSummary";
+import ModuleHistory from "../ModuleHistory/ModuleHistory";
+import DashboardEntries from "../DashboardEntries/DashboardEntries";
 
 const Dashboard = () => {
   return (
@@ -15,6 +18,16 @@ const Dashboard = () => {
         {trackerData.map(({ value, text }) => (
           <TrackerCard value={value} text={text} />
         ))}
+      </div>
+
+      <div className="dashboard__content">
+        <div className="dashboard__content__left">
+          <DivisionSummary />
+          <ModuleHistory />
+        </div>
+        <div className="dashboard__content__right">
+          <DashboardEntries />
+        </div>
       </div>
     </div>
   );

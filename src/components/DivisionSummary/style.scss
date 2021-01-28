@@ -1,0 +1,58 @@
+@import "../../styles/global";
+@import "../../styles/variables";
+
+.summary {
+  color: #000000;
+  padding: 0.7rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  box-shadow: 0px -1px 20px rgba(183, 183, 183, 0.25);
+  border-radius: 0.5rem;
+  grid-row: 1/2;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    font-weight: $normal-font;
+    margin-bottom: 1.5rem;
+
+    p {
+      font-size: 0.97rem;
+      font-weight: 500;
+    }
+
+    img {
+      margin-right: 1rem;
+      border-radius: 0.3rem;
+      padding: 0.35rem 0.3rem;
+      background-color: #00a2d6;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    color: #0f1a4f;
+    width: 100%;
+    word-wrap: break-word;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    img {
+      margin-right: 1rem;
+    }
+
+    a {
+      font-size: 0.9rem;
+      color: initial;
+      text-decoration: none;
+
+      &:focus {
+        text-decoration: underline;
+        color: #5771ee;
+      }
+    }
+  }
+}
