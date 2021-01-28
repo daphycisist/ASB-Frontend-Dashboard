@@ -3,19 +3,33 @@
 
 .dashboardentries {
   width: 100%;
+  //   padding: 1rem;
+  box-shadow: 40px 4px 30px rgba(192, 192, 192, 0.25);
 
   &__header {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
     background: #f3f6f9;
     color: #899198;
-    font-size: .7rem;
+    font-weight: normal;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 0.2fr;
+    grid-gap: .2rem;
+    align-items: center;
+    padding: 1rem;
+    font-size: 0.8rem;
 
-    justify-content: space-between;
+    &__options {
+      display: flex;
+      align-items: center;
 
-    p {
-      justify-self: start;
+      :nth-child(2) {
+        margin: 0 2rem;
+        visibility: hidden;
+      }
+    }
+
+    & > :last-child {
+      visibility: hidden;
     }
 
     input[type="checkbox"] {

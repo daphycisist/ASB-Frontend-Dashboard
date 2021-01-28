@@ -23,7 +23,6 @@ const ModuleHistory = () => {
         </p>
         <div className="history__content__date">
           <p>22:10 15/09/2020</p>
-          <span></span>
           <p>Web</p>
         </div>
       </div>
