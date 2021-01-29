@@ -35,25 +35,48 @@
     font-size: 12px;
     font-weight: 600;
     padding-bottom: 1rem;
+    // border-left: 1px dashed;
+
+    &:not(:last-child){
+    border-left: 1px dashed;
+
+    }
+
 
     &__task {
       color: #747474;
       margin-bottom: 0.7rem;
+      position: relative;
+      padding: 0 1rem;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 0.5rem;
+        height: 0.5rem;
+        left: -2%;
+        top: 30%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        background-color: #a1aace;
+      }
     }
 
     &__date {
       display: flex;
       color: #a1aace;
       align-items: center;
+      padding: 0 1rem;
+
 
       p:first-of-type {
-          padding-right: .6rem;
+        padding-right: 0.6rem;
       }
 
-      p:last-of-type  {
+      p:last-of-type {
         position: relative;
-        padding-left: .8rem;
-        
+        padding-left: 0.8rem;
+
         &::before {
           position: absolute;
           content: "";

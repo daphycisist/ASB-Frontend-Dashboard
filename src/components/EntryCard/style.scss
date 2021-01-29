@@ -41,7 +41,7 @@
     justify-self: flex-start;
     width: 100%;
     font-weight: $bold-font;
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
 
   &__entry {
@@ -51,13 +51,13 @@
       font-weight: $bold-font;
       margin-bottom: 0.4rem;
       position: relative;
-      padding-left: .7rem;
+      padding-left: 0.7rem;
 
       &::before {
         position: absolute;
         content: "";
-        width: .35rem;
-        height: .35rem;
+        width: 0.35rem;
+        height: 0.35rem;
         left: 0;
         top: 50%;
         transform: translateY(-50%);
@@ -108,4 +108,28 @@
 .orange {
   background: #fff6de;
   color: #f4b400;
+}
+
+.low,
+.mid,
+.high {
+  font-weight: $regular-font;
+  font-size: .9rem;
+
+  svg {
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.low {
+  color: #3ab65c;
+}
+
+.mid {
+  color: #3c3ab6;
+}
+
+.high {
+  color: #b63a3a;
 }

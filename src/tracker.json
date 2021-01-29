@@ -1,21 +1,26 @@
 [
   {
+    "id": 1,
     "value": 31454,
     "text": "Ongoing value"
   },
   {
+    "id": 2,
     "value": 2344,
     "text": "Past metric"
   },
   {
+    "id": 3,
     "value": 14224,
     "text": "Missed metric"
   },
   {
+    "id": 4,
     "value": 635,
     "text": "Failed metric"
   },
   {
+    "id": 5,
     "value": 11334,
     "text": "Pending metric"
   }

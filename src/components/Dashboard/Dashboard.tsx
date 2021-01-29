@@ -15,8 +15,8 @@ const Dashboard = () => {
         <p>Module</p>
       </div>
       <div className="dashboard__trackers">
-        {trackerData.map(({ value, text }) => (
-          <TrackerCard value={value} text={text} />
+        {trackerData.map(({id, value, text }) => (
+          <TrackerCard key={id} value={value} text={text} />
         ))}
       </div>
 

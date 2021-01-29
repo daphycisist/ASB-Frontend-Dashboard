@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Courtney Henry",
+    "location": { "state": "Lagos state", "address": "775 Rolling Green Rd." },
+    "issues": 0,
+    "entry": { "amount": 19, "type": "Homogenous" },
+    "riskType": "low",
+    "val":false
+  },
+  {
+    "id": 2,
+    "name": "Darrell Steward",
+    "location": { "state": "Lagos state", "address": "7529 E. Pecan St." },
+    "issues": 2,
+    "entry": { "amount": 10, "type": "Heterogenous" },
+    "riskType": "mid",
+    "val":false
+  },
+  {
+    "id": 3,
+    "name": "Cody Fisher",
+    "location": { "state": "Lagos state", "address": "3605 Parker Rd." },
+    "issues": 0,
+    "entry": { "amount": 8, "type": "Homogenous" },
+    "riskType": "mid",
+    "val":false
+  },
+  {
+    "id": 4,
+    "name": "Bessie Cooper",
+    "location": { "state": "Lagos state", "address": "775 Rolling Green Rd." },
+    "issues": 1,
+    "entry": { "amount": 12, "type": "Heterogenous" },
+    "riskType": "high",
+    "val":false
+  },
+  {
+    "id": 5,
+    "name": "Annette Black",
+    "location": { "state": "Lagos state", "address": "8080 Railroad St." },
+    "issues": 0,
+    "entry": { "amount": 13, "type": "Heterogenous" },
+    "riskType": "low",
+    "val":false
+  },
+  {
+    "id": 6,
+    "name": "Jenny Wilson",
+    "location": { "state": "Lagos state", "address": "8080 Railroad St." },
+    "issues": 5,
+    "entry": { "amount": 8, "type": "Homogenous" },
+    "riskType": "high",
+    "val":false
+  },
+  {
+    "id": 7,
+    "name": "Darlene Robertson",
+    "location": { "state": "Lagos state", "address": "3890 Poplar Dr." },
+    "issues": 2,
+    "entry": { "amount": 6, "type": "Homogenous" },
+    "riskType": "mid",
+    "val":false
+  },
+  {
+    "id": 8,
+    "name": "Ralph Edwards",
+    "location": { "state": "Lagos state", "address": "8558 Green Rd." },
+    "issues": 0,
+    "entry": { "amount": 14, "type": "Homogenous" },
+    "riskType": "low",
+    "val":false
+  }
+]
