@@ -8,13 +8,7 @@ const DashboardEntries = () => {
   const [ischecked, setIsChecked] = useState(false);
   const [globalsta, globalState] = useState(data)
 
-  const handleCheck = (e: React.FormEvent<HTMLInputElement>) => {
-    //  const { name } = e.target;
-    console.log(e.target);
-  };
-
   const onChange = () => {
-    console.log("the data", globalsta)
     setIsChecked(!ischecked)
     let all = globalsta.map((item) => {
       item.val = !ischecked === true ? (item.val = true) : item.val = false
